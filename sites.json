@@ -1,0 +1,239 @@
+{
+    "sites": [
+      {
+        "id": "14gef4567-e89b-e5r3-n456-426614174013",
+        "name": "Riga Old Town",
+        "location": {
+          "lat": 56.9496,
+          "lon": 24.1052
+        },
+        "details": "The historic and geographic center of Riga, known for its architectural beauty."
+      },
+      {
+        "id": "15hef4567-e89b-f6s3-o456-426614174014",
+        "name": "Gauja National Park",
+        "location": {
+          "lat": 57.3135,
+          "lon": 25.2746
+        },
+        "details": "Latvia's largest national park, famous for its forests, rivers, and sandstone cliffs."
+      },
+      {
+        "id": "16ief4567-e89b-g7t3-p456-426614174015",
+        "name": "Jūrmala",
+        "location": {
+          "lat": 56.9671,
+          "lon": 23.7709
+        },
+        "details": "A major resort city known for its long, sandy beaches, wooden architecture, and spas."
+      },
+      {
+        "id": "17jef4567-e89b-h8u3-q456-426614174016",
+        "name": "Sigulda",
+        "location": {
+          "lat": 57.1569,
+          "lon": 24.8648
+        },
+        "details": "A town in the Gauja River valley, known for its castles, caves, and scenic beauty."
+      },
+      {
+        "id": "18kef4567-e89b-i9v3-r456-426614174017",
+        "name": "Kemeri National Park",
+        "location": {
+          "lat": 56.9026,
+          "lon": 23.5223
+        },
+        "details": "Famous for its wetlands, sulfur springs, and diverse bird species."
+      },
+      {
+        "id": "19lef4567-e89b-jaw3-s456-426614174018",
+        "name": "Turaida Castle",
+        "location": {
+          "lat": 57.1854,
+          "lon": 24.8474
+        },
+        "details": "A historical castle with a museum and a beautiful park around it."
+      },
+      {
+        "id": "20mef4567-e89b-kbx3-t456-426614174019",
+        "name": "Rundāle Palace",
+        "location": {
+          "lat": 56.4152,
+          "lon": 24.0246
+        },
+        "details": "An 18th-century baroque palace, sometimes referred to as the 'Versailles of Latvia.'"
+      },
+      {
+        "id": "21nef4567-e89b-lcy3-u456-426614174020",
+        "name": "Cape Kolka",
+        "location": {
+          "lat": 57.7531,
+          "lon": 22.5814
+        },
+        "details": "A cape where the Gulf of Riga meets the Baltic Sea, known for its stunning views."
+      },
+      {
+        "id": "22oef4567-e89b-mdz3-v456-426614174021",
+        "name": "Liepaja",
+        "location": {
+          "lat": 56.5047,
+          "lon": 21.0108
+        },
+        "details": "Known for its music scene, beach, and unique architecture like the Holy Trinity Cathedral."
+      },
+      {
+        "id": "23pef4567-e89b-nea3-w456-426614174022",
+        "name": "Agenskalns",
+        "location": {
+          "lat": 56.9412,
+          "lon": 24.0754
+        },
+        "details": "A historic district in Riga, known for its wooden architecture and markets."
+      },
+      {
+        "id": "24qef4567-e89b-ofb3-x456-426614174023",
+        "name": "Cesis",
+        "location": {
+          "lat": 57.3130,
+          "lon": 25.2711
+        },
+        "details": "A small town with a well-preserved medieval castle and a rich history."
+      },
+      {
+        "id": "25ref4567-e89b-pgc3-y456-426614174024",
+        "name": "Slitere National Park",
+        "location": {
+          "lat": 57.6667,
+          "lon": 22.0167
+        },
+        "details": "Known for its coastal forests, bogs, and the unique 'Slītere Lighthouse.'"
+      },
+      {
+        "id": "26sef4567-e89b-qhd3-z456-426614174025",
+        "name": "Ventspils",
+        "location": {
+          "lat": 57.3894,
+          "lon": 21.5606
+        },
+        "details": "A city on the Baltic coast known for its port, beaches, and the Ventspils International Radio Astronomy Centre."
+      },
+      {
+        "id": "1eef4567-e89b-12d3-a456-426614174000",
+        "name": "Tallinn Old Town",
+        "location": {
+          "lat": 59.4370,
+          "lon": 24.7536
+        },
+        "details": "Historic center of Estonia's capital, known for its medieval architecture."
+      },
+      {
+        "id": "2aef4567-e89b-23f3-b456-426614174001",
+        "name": "Lahemaa National Park",
+        "location": {
+          "lat": 59.5773,
+          "lon": 25.7064
+        },
+        "details": "One of Europe's biggest national parks, famous for forests, bogs, and coastlines."
+      },
+      {
+        "id": "3bef4567-e89b-34g3-c456-426614174002",
+        "name": "Saaremaa Island",
+        "location": {
+          "lat": 58.5435,
+          "lon": 22.2135
+        },
+        "details": "The largest island in Estonia, known for its unique culture and landscapes."
+      },
+      {
+        "id": "4cef4567-e89b-45h3-d456-426614174003",
+        "name": "Pärnu Beach",
+        "location": {
+          "lat": 58.3850,
+          "lon": 24.4966
+        },
+        "details": "A popular summer destination with wide sandy beaches and vibrant nightlife."
+      },
+      {
+        "id": "5def4567-e89b-56i3-e456-426614174004",
+        "name": "Tartu Old Town",
+        "location": {
+          "lat": 58.3780,
+          "lon": 26.7225
+        },
+        "details": "Home to the University of Tartu, this area is full of history and youthful energy."
+      },
+      {
+        "id": "6eef4567-e89b-67j3-f456-426614174005",
+        "name": "Soomaa National Park",
+        "location": {
+          "lat": 58.4783,
+          "lon": 25.1833
+        },
+        "details": "Noted for its large peat bogs, rivers, and diverse wildlife."
+      },
+      {
+        "id": "7fef4567-e89b-78k3-g456-426614174006",
+        "name": "Toompea Castle",
+        "location": {
+          "lat": 59.4372,
+          "lon": 24.7395
+        },
+        "details": "An iconic historical fortress now houses the Estonian parliament."
+      },
+      {
+        "id": "8aef4567-e89b-89l3-h456-426614174007",
+        "name": "Aegna Island",
+        "location": {
+          "lat": 59.5806,
+          "lon": 24.7661
+        },
+        "details": "A serene island near Tallinn, perfect for hiking and nature trips."
+      },
+      {
+        "id": "9bef4567-e89b-90m3-i456-426614174008",
+        "name": "Kadriorg Park",
+        "location": {
+          "lat": 59.4369,
+          "lon": 24.7793
+        },
+        "details": "A stunning park surrounding Kadriorg Palace, filled with art and history."
+      },
+      {
+        "id": "10cef4567-e89b-a1n3-j456-426614174009",
+        "name": "Kumu Art Museum",
+        "location": {
+          "lat": 59.4378,
+          "lon": 24.7855
+        },
+        "details": "Estonia's largest and most cutting-edge art museum."
+      },
+      {
+        "id": "11def4567-e89b-b2o3-k456-426614174010",
+        "name": "Rakvere Castle",
+        "location": {
+          "lat": 59.3464,
+          "lon": 26.3558
+        },
+        "details": "A historic castle offering medieval-themed attractions and events."
+      },
+      {
+        "id": "12eef4567-e89b-c3p3-l456-426614174011",
+        "name": "Viljandi Old Town",
+        "location": {
+          "lat": 58.3636,
+          "lon": 25.5936
+        },
+        "details": "Charming old town known for its annual music festival and historic sites."
+      },
+      {
+        "id": "13fef4567-e89b-d4q3-m456-426614174012",
+        "name": "Hiiumaa Island",
+        "location": {
+          "lat": 58.9978,
+          "lon": 22.7474
+        },
+        "details": "The second largest island in Estonia, offering unspoiled nature and lighthouses."
+      }
+    ]
+  }
+  

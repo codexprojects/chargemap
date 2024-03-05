@@ -1,0 +1,1563 @@
+{
+  "chargers": [
+    {
+      "id": "charger_9896",
+      "siteID": "14gef4567-e89b-e5r3-n456-426614174013",
+      "name": "Charger at Riga Old Town",
+      "evses": [
+        {
+          "id": 1,
+          "code": "EVSE1"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2248,
+          "evseId": 1,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 2973,
+          "evseId": 1,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_9095",
+      "siteID": "14gef4567-e89b-e5r3-n456-426614174013",
+      "name": "Charger at Riga Old Town",
+      "evses": [
+        {
+          "id": 2,
+          "code": "EVSE2"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6358,
+          "evseId": 2,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 5764,
+          "evseId": 2,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_4763",
+      "siteID": "14gef4567-e89b-e5r3-n456-426614174013",
+      "name": "Charger at Riga Old Town",
+      "evses": [
+        {
+          "id": 3,
+          "code": "EVSE3"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8680,
+          "evseId": 3,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_6283",
+      "siteID": "14gef4567-e89b-e5r3-n456-426614174013",
+      "name": "Charger at Riga Old Town",
+      "evses": [
+        {
+          "id": 4,
+          "code": "EVSE4"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7118,
+          "evseId": 4,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 1524,
+          "evseId": 4,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_8940",
+      "siteID": "15hef4567-e89b-f6s3-o456-426614174014",
+      "name": "Charger at Gauja National Park",
+      "evses": [
+        {
+          "id": 5,
+          "code": "EVSE5"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7046,
+          "evseId": 5,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_3521",
+      "siteID": "15hef4567-e89b-f6s3-o456-426614174014",
+      "name": "Charger at Gauja National Park",
+      "evses": [
+        {
+          "id": 6,
+          "code": "EVSE6"
+        },
+        {
+          "id": 7,
+          "code": "EVSE7"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 4482,
+          "evseId": 6,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 2554,
+          "evseId": 7,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_9550",
+      "siteID": "15hef4567-e89b-f6s3-o456-426614174014",
+      "name": "Charger at Gauja National Park",
+      "evses": [
+        {
+          "id": 8,
+          "code": "EVSE8"
+        },
+        {
+          "id": 9,
+          "code": "EVSE9"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2829,
+          "evseId": 8,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 7111,
+          "evseId": 9,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_9216",
+      "siteID": "16ief4567-e89b-g7t3-p456-426614174015",
+      "name": "Charger at J\u016brmala",
+      "evses": [
+        {
+          "id": 10,
+          "code": "EVSE10"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 4467,
+          "evseId": 10,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_7431",
+      "siteID": "16ief4567-e89b-g7t3-p456-426614174015",
+      "name": "Charger at J\u016brmala",
+      "evses": [
+        {
+          "id": 11,
+          "code": "EVSE11"
+        },
+        {
+          "id": 12,
+          "code": "EVSE12"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5278,
+          "evseId": 11,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 6186,
+          "evseId": 12,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_6716",
+      "siteID": "16ief4567-e89b-g7t3-p456-426614174015",
+      "name": "Charger at J\u016brmala",
+      "evses": [
+        {
+          "id": 13,
+          "code": "EVSE13"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1810,
+          "evseId": 13,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 6745,
+          "evseId": 13,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_2709",
+      "siteID": "17jef4567-e89b-h8u3-q456-426614174016",
+      "name": "Charger at Sigulda",
+      "evses": [
+        {
+          "id": 14,
+          "code": "EVSE14"
+        },
+        {
+          "id": 15,
+          "code": "EVSE15"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7521,
+          "evseId": 14,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 2224,
+          "evseId": 14,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 1743,
+          "evseId": 15,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_7442",
+      "siteID": "17jef4567-e89b-h8u3-q456-426614174016",
+      "name": "Charger at Sigulda",
+      "evses": [
+        {
+          "id": 16,
+          "code": "EVSE16"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5494,
+          "evseId": 16,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_5558",
+      "siteID": "18kef4567-e89b-i9v3-r456-426614174017",
+      "name": "Charger at Kemeri National Park",
+      "evses": [
+        {
+          "id": 17,
+          "code": "EVSE17"
+        },
+        {
+          "id": 18,
+          "code": "EVSE18"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8292,
+          "evseId": 17,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 2567,
+          "evseId": 18,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 6722,
+          "evseId": 18,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_4868",
+      "siteID": "19lef4567-e89b-jaw3-s456-426614174018",
+      "name": "Charger at Turaida Castle",
+      "evses": [
+        {
+          "id": 19,
+          "code": "EVSE19"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7977,
+          "evseId": 19,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 1170,
+          "evseId": 19,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_2488",
+      "siteID": "20mef4567-e89b-kbx3-t456-426614174019",
+      "name": "Charger at Rund\u0101le Palace",
+      "evses": [
+        {
+          "id": 20,
+          "code": "EVSE20"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 4353,
+          "evseId": 20,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 4169,
+          "evseId": 20,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_9760",
+      "siteID": "20mef4567-e89b-kbx3-t456-426614174019",
+      "name": "Charger at Rund\u0101le Palace",
+      "evses": [
+        {
+          "id": 21,
+          "code": "EVSE21"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2285,
+          "evseId": 21,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_2133",
+      "siteID": "21nef4567-e89b-lcy3-u456-426614174020",
+      "name": "Charger at Cape Kolka",
+      "evses": [
+        {
+          "id": 22,
+          "code": "EVSE22"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6982,
+          "evseId": 22,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_7205",
+      "siteID": "22oef4567-e89b-mdz3-v456-426614174021",
+      "name": "Charger at Liepaja",
+      "evses": [
+        {
+          "id": 23,
+          "code": "EVSE23"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6039,
+          "evseId": 23,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 6103,
+          "evseId": 23,
+          "power": 22,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_3280",
+      "siteID": "22oef4567-e89b-mdz3-v456-426614174021",
+      "name": "Charger at Liepaja",
+      "evses": [
+        {
+          "id": 24,
+          "code": "EVSE24"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 9624,
+          "evseId": 24,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 9329,
+          "evseId": 24,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_8941",
+      "siteID": "22oef4567-e89b-mdz3-v456-426614174021",
+      "name": "Charger at Liepaja",
+      "evses": [
+        {
+          "id": 25,
+          "code": "EVSE25"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2534,
+          "evseId": 25,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_3008",
+      "siteID": "22oef4567-e89b-mdz3-v456-426614174021",
+      "name": "Charger at Liepaja",
+      "evses": [
+        {
+          "id": 26,
+          "code": "EVSE26"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1480,
+          "evseId": 26,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 7362,
+          "evseId": 26,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_5853",
+      "siteID": "23pef4567-e89b-nea3-w456-426614174022",
+      "name": "Charger at Agenskalns",
+      "evses": [
+        {
+          "id": 27,
+          "code": "EVSE27"
+        },
+        {
+          "id": 28,
+          "code": "EVSE28"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1232,
+          "evseId": 27,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 1175,
+          "evseId": 28,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_7794",
+      "siteID": "24qef4567-e89b-ofb3-x456-426614174023",
+      "name": "Charger at Cesis",
+      "evses": [
+        {
+          "id": 29,
+          "code": "EVSE29"
+        },
+        {
+          "id": 30,
+          "code": "EVSE30"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6766,
+          "evseId": 29,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 7191,
+          "evseId": 30,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 6714,
+          "evseId": 30,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_2890",
+      "siteID": "24qef4567-e89b-ofb3-x456-426614174023",
+      "name": "Charger at Cesis",
+      "evses": [
+        {
+          "id": 31,
+          "code": "EVSE31"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1183,
+          "evseId": 31,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 2114,
+          "evseId": 31,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_4409",
+      "siteID": "24qef4567-e89b-ofb3-x456-426614174023",
+      "name": "Charger at Cesis",
+      "evses": [
+        {
+          "id": 32,
+          "code": "EVSE32"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1013,
+          "evseId": 32,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 5002,
+          "evseId": 32,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_9753",
+      "siteID": "24qef4567-e89b-ofb3-x456-426614174023",
+      "name": "Charger at Cesis",
+      "evses": [
+        {
+          "id": 33,
+          "code": "EVSE33"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2125,
+          "evseId": 33,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_4567",
+      "siteID": "25ref4567-e89b-pgc3-y456-426614174024",
+      "name": "Charger at Slitere National Park",
+      "evses": [
+        {
+          "id": 34,
+          "code": "EVSE34"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1478,
+          "evseId": 34,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 5462,
+          "evseId": 34,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_1021",
+      "siteID": "25ref4567-e89b-pgc3-y456-426614174024",
+      "name": "Charger at Slitere National Park",
+      "evses": [
+        {
+          "id": 35,
+          "code": "EVSE35"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7153,
+          "evseId": 35,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 2913,
+          "evseId": 35,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_4197",
+      "siteID": "25ref4567-e89b-pgc3-y456-426614174024",
+      "name": "Charger at Slitere National Park",
+      "evses": [
+        {
+          "id": 36,
+          "code": "EVSE36"
+        },
+        {
+          "id": 37,
+          "code": "EVSE37"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 3538,
+          "evseId": 36,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 4709,
+          "evseId": 37,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 2258,
+          "evseId": 37,
+          "power": 22,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_8760",
+      "siteID": "26sef4567-e89b-qhd3-z456-426614174025",
+      "name": "Charger at Ventspils",
+      "evses": [
+        {
+          "id": 38,
+          "code": "EVSE38"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 9773,
+          "evseId": 38,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 3600,
+          "evseId": 38,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_7018",
+      "siteID": "26sef4567-e89b-qhd3-z456-426614174025",
+      "name": "Charger at Ventspils",
+      "evses": [
+        {
+          "id": 39,
+          "code": "EVSE39"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5953,
+          "evseId": 39,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 7804,
+          "evseId": 39,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_9111",
+      "siteID": "26sef4567-e89b-qhd3-z456-426614174025",
+      "name": "Charger at Ventspils",
+      "evses": [
+        {
+          "id": 40,
+          "code": "EVSE40"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5308,
+          "evseId": 40,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_9059",
+      "siteID": "1eef4567-e89b-12d3-a456-426614174000",
+      "name": "Charger at Tallinn Old Town",
+      "evses": [
+        {
+          "id": 41,
+          "code": "EVSE41"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 4950,
+          "evseId": 41,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_2257",
+      "siteID": "2aef4567-e89b-23f3-b456-426614174001",
+      "name": "Charger at Lahemaa National Park",
+      "evses": [
+        {
+          "id": 42,
+          "code": "EVSE42"
+        },
+        {
+          "id": 43,
+          "code": "EVSE43"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8346,
+          "evseId": 42,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 3623,
+          "evseId": 43,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 8330,
+          "evseId": 43,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_4463",
+      "siteID": "2aef4567-e89b-23f3-b456-426614174001",
+      "name": "Charger at Lahemaa National Park",
+      "evses": [
+        {
+          "id": 44,
+          "code": "EVSE44"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5909,
+          "evseId": 44,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_7005",
+      "siteID": "3bef4567-e89b-34g3-c456-426614174002",
+      "name": "Charger at Saaremaa Island",
+      "evses": [
+        {
+          "id": 45,
+          "code": "EVSE45"
+        },
+        {
+          "id": 46,
+          "code": "EVSE46"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 9780,
+          "evseId": 45,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 9853,
+          "evseId": 46,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 7354,
+          "evseId": 46,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_4255",
+      "siteID": "3bef4567-e89b-34g3-c456-426614174002",
+      "name": "Charger at Saaremaa Island",
+      "evses": [
+        {
+          "id": 47,
+          "code": "EVSE47"
+        },
+        {
+          "id": 48,
+          "code": "EVSE48"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6538,
+          "evseId": 47,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 4341,
+          "evseId": 48,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 5419,
+          "evseId": 48,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_4031",
+      "siteID": "3bef4567-e89b-34g3-c456-426614174002",
+      "name": "Charger at Saaremaa Island",
+      "evses": [
+        {
+          "id": 49,
+          "code": "EVSE49"
+        },
+        {
+          "id": 50,
+          "code": "EVSE50"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 3960,
+          "evseId": 49,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 6088,
+          "evseId": 50,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_3295",
+      "siteID": "3bef4567-e89b-34g3-c456-426614174002",
+      "name": "Charger at Saaremaa Island",
+      "evses": [
+        {
+          "id": 51,
+          "code": "EVSE51"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 9725,
+          "evseId": 51,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_2178",
+      "siteID": "4cef4567-e89b-45h3-d456-426614174003",
+      "name": "Charger at P\u00e4rnu Beach",
+      "evses": [
+        {
+          "id": 52,
+          "code": "EVSE52"
+        },
+        {
+          "id": 53,
+          "code": "EVSE53"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5784,
+          "evseId": 52,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 3006,
+          "evseId": 53,
+          "power": 22,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_5893",
+      "siteID": "4cef4567-e89b-45h3-d456-426614174003",
+      "name": "Charger at P\u00e4rnu Beach",
+      "evses": [
+        {
+          "id": 54,
+          "code": "EVSE54"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8718,
+          "evseId": 54,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 1866,
+          "evseId": 54,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_3927",
+      "siteID": "5def4567-e89b-56i3-e456-426614174004",
+      "name": "Charger at Tartu Old Town",
+      "evses": [
+        {
+          "id": 55,
+          "code": "EVSE55"
+        },
+        {
+          "id": 56,
+          "code": "EVSE56"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7658,
+          "evseId": 55,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 5944,
+          "evseId": 56,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_5118",
+      "siteID": "6eef4567-e89b-67j3-f456-426614174005",
+      "name": "Charger at Soomaa National Park",
+      "evses": [
+        {
+          "id": 57,
+          "code": "EVSE57"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8646,
+          "evseId": 57,
+          "power": 22,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_5556",
+      "siteID": "6eef4567-e89b-67j3-f456-426614174005",
+      "name": "Charger at Soomaa National Park",
+      "evses": [
+        {
+          "id": 58,
+          "code": "EVSE58"
+        },
+        {
+          "id": 59,
+          "code": "EVSE59"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1649,
+          "evseId": 58,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 6675,
+          "evseId": 59,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_6183",
+      "siteID": "7fef4567-e89b-78k3-g456-426614174006",
+      "name": "Charger at Toompea Castle",
+      "evses": [
+        {
+          "id": 60,
+          "code": "EVSE60"
+        },
+        {
+          "id": 61,
+          "code": "EVSE61"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 7996,
+          "evseId": 60,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 2476,
+          "evseId": 60,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 1340,
+          "evseId": 61,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_1616",
+      "siteID": "7fef4567-e89b-78k3-g456-426614174006",
+      "name": "Charger at Toompea Castle",
+      "evses": [
+        {
+          "id": 62,
+          "code": "EVSE62"
+        },
+        {
+          "id": 63,
+          "code": "EVSE63"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 3566,
+          "evseId": 62,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 6031,
+          "evseId": 63,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_4368",
+      "siteID": "8aef4567-e89b-89l3-h456-426614174007",
+      "name": "Charger at Aegna Island",
+      "evses": [
+        {
+          "id": 64,
+          "code": "EVSE64"
+        },
+        {
+          "id": 65,
+          "code": "EVSE65"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 6031,
+          "evseId": 64,
+          "power": 22,
+          "status": 1
+        },
+        {
+          "id": 8030,
+          "evseId": 64,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 8772,
+          "evseId": 65,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_6978",
+      "siteID": "9bef4567-e89b-90m3-i456-426614174008",
+      "name": "Charger at Kadriorg Park",
+      "evses": [
+        {
+          "id": 66,
+          "code": "EVSE66"
+        },
+        {
+          "id": 67,
+          "code": "EVSE67"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 3639,
+          "evseId": 66,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 4130,
+          "evseId": 66,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 3131,
+          "evseId": 67,
+          "power": 22,
+          "status": 2
+        },
+        {
+          "id": 1752,
+          "evseId": 67,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_9085",
+      "siteID": "9bef4567-e89b-90m3-i456-426614174008",
+      "name": "Charger at Kadriorg Park",
+      "evses": [
+        {
+          "id": 68,
+          "code": "EVSE68"
+        },
+        {
+          "id": 69,
+          "code": "EVSE69"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8500,
+          "evseId": 68,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 4328,
+          "evseId": 68,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 5868,
+          "evseId": 69,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_8050",
+      "siteID": "9bef4567-e89b-90m3-i456-426614174008",
+      "name": "Charger at Kadriorg Park",
+      "evses": [
+        {
+          "id": 70,
+          "code": "EVSE70"
+        },
+        {
+          "id": 71,
+          "code": "EVSE71"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8911,
+          "evseId": 70,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 8431,
+          "evseId": 71,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 3443,
+          "evseId": 71,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_2387",
+      "siteID": "9bef4567-e89b-90m3-i456-426614174008",
+      "name": "Charger at Kadriorg Park",
+      "evses": [
+        {
+          "id": 72,
+          "code": "EVSE72"
+        },
+        {
+          "id": 73,
+          "code": "EVSE73"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5821,
+          "evseId": 72,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 9080,
+          "evseId": 72,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 7397,
+          "evseId": 73,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 3463,
+          "evseId": 73,
+          "power": 22,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_6623",
+      "siteID": "10cef4567-e89b-a1n3-j456-426614174009",
+      "name": "Charger at Kumu Art Museum",
+      "evses": [
+        {
+          "id": 74,
+          "code": "EVSE74"
+        },
+        {
+          "id": 75,
+          "code": "EVSE75"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8221,
+          "evseId": 74,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 1033,
+          "evseId": 74,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 1054,
+          "evseId": 75,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_1243",
+      "siteID": "11def4567-e89b-b2o3-k456-426614174010",
+      "name": "Charger at Rakvere Castle",
+      "evses": [
+        {
+          "id": 76,
+          "code": "EVSE76"
+        },
+        {
+          "id": 77,
+          "code": "EVSE77"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8590,
+          "evseId": 76,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 2547,
+          "evseId": 76,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 9643,
+          "evseId": 77,
+          "power": 50,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_1997",
+      "siteID": "12eef4567-e89b-c3p3-l456-426614174011",
+      "name": "Charger at Viljandi Old Town",
+      "evses": [
+        {
+          "id": 78,
+          "code": "EVSE78"
+        },
+        {
+          "id": 79,
+          "code": "EVSE79"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 5890,
+          "evseId": 78,
+          "power": 50,
+          "status": 1
+        },
+        {
+          "id": 2853,
+          "evseId": 78,
+          "power": 50,
+          "status": 0
+        },
+        {
+          "id": 7502,
+          "evseId": 79,
+          "power": 22,
+          "status": 2
+        }
+      ]
+    },
+    {
+      "id": "charger_3708",
+      "siteID": "12eef4567-e89b-c3p3-l456-426614174011",
+      "name": "Charger at Viljandi Old Town",
+      "evses": [
+        {
+          "id": 80,
+          "code": "EVSE80"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 8023,
+          "evseId": 80,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 6558,
+          "evseId": 80,
+          "power": 50,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": "charger_7544",
+      "siteID": "13fef4567-e89b-d4q3-m456-426614174012",
+      "name": "Charger at Hiiumaa Island",
+      "evses": [
+        {
+          "id": 81,
+          "code": "EVSE81"
+        },
+        {
+          "id": 82,
+          "code": "EVSE82"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 2993,
+          "evseId": 81,
+          "power": 50,
+          "status": 2
+        },
+        {
+          "id": 2666,
+          "evseId": 81,
+          "power": 22,
+          "status": 0
+        },
+        {
+          "id": 4736,
+          "evseId": 82,
+          "power": 50,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "id": "charger_1768",
+      "siteID": "13fef4567-e89b-d4q3-m456-426614174012",
+      "name": "Charger at Hiiumaa Island",
+      "evses": [
+        {
+          "id": 83,
+          "code": "EVSE83"
+        }
+      ],
+      "connectors": [
+        {
+          "id": 1198,
+          "evseId": 83,
+          "power": 22,
+          "status": 0
+        }
+      ]
+    }
+  ]
+}
