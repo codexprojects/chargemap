@@ -1,6 +1,6 @@
-# ChargerMap
+# ChargeMap
 
-ChargerMap is an iOS application that showcases electric vehicle (EV) charging sites on a map. Utilizing data fetched from simulated API endpoints, it allows users to explore charging sites and view detailed information about the chargers and their statuses.
+ChargeMap is an iOS application that showcases electric vehicle (EV) charging sites on a map. Utilizing data fetched from simulated API endpoints allows users to explore charging sites and view detailed information about the chargers and their statuses.
 
 ## Features
 
@@ -19,7 +19,7 @@ ChargerMap is an iOS application that showcases electric vehicle (EV) charging s
 
 1. Clone the repository:
    
-2. Open `ChargerMap.xcodeproj` in Xcode.
+2. Open `ChargeMap.xcodeproj` in Xcode.
 
 3. Install third-party frameworks using Swift Package Manager (SPM):
    - Navigate to `File` > `Add Packages...`
