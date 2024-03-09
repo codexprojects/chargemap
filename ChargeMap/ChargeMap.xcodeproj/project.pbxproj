@@ -14,6 +14,8 @@
 		4171DCBD2B9CA26E00B53E84 /* SitesMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCBC2B9CA26E00B53E84 /* SitesMapCoordinator.swift */; };
 		4171DCBF2B9CA2BA00B53E84 /* SitesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCBE2B9CA2BA00B53E84 /* SitesMapViewController.swift */; };
 		4171DCC32B9CA4CA00B53E84 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCC22B9CA4CA00B53E84 /* APIEndpoints.swift */; };
+		4171DCC52B9CA51300B53E84 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCC42B9CA51300B53E84 /* Repository.swift */; };
+		4171DCC72B9CA55300B53E84 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCC62B9CA55300B53E84 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4171DCBC2B9CA26E00B53E84 /* SitesMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesMapCoordinator.swift; sourceTree = "<group>"; };
 		4171DCBE2B9CA2BA00B53E84 /* SitesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesMapViewController.swift; sourceTree = "<group>"; };
 		4171DCC22B9CA4CA00B53E84 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		4171DCC42B9CA51300B53E84 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		4171DCC62B9CA55300B53E84 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				4171DCC22B9CA4CA00B53E84 /* APIEndpoints.swift */,
+				4171DCC42B9CA51300B53E84 /* Repository.swift */,
+				4171DCC62B9CA55300B53E84 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				4171DCA72B9CA20500B53E84 /* AppDelegate.swift in Sources */,
 				4171DCA92B9CA20500B53E84 /* SceneDelegate.swift in Sources */,
 				4171DCBD2B9CA26E00B53E84 /* SitesMapCoordinator.swift in Sources */,
+				4171DCC52B9CA51300B53E84 /* Repository.swift in Sources */,
+				4171DCC72B9CA55300B53E84 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
