@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4161E02E2B9CD921003A769A /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02D2B9CD921003A769A /* Charger.swift */; };
+		4161E0302B9CD9FB003A769A /* ChargersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */; };
+		4161E0332B9CDA32003A769A /* ChargerRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E0322B9CDA32003A769A /* ChargerRealmModel.swift */; };
+		4161E0362B9CDBD5003A769A /* ChargersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E0352B9CDBD5003A769A /* ChargersCoordinator.swift */; };
+		4161E03A2B9CDC4A003A769A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E0392B9CDC4A003A769A /* Coordinator.swift */; };
+		4161E03C2B9CDD98003A769A /* ChargersDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E03B2B9CDD98003A769A /* ChargersDataViewModel.swift */; };
+		4161E03E2B9CDFCD003A769A /* ChargersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E03D2B9CDFCD003A769A /* ChargersListView.swift */; };
 		4171DCA72B9CA20500B53E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCA62B9CA20500B53E84 /* AppDelegate.swift */; };
 		4171DCA92B9CA20500B53E84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCA82B9CA20500B53E84 /* SceneDelegate.swift */; };
 		4171DCB02B9CA20700B53E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4171DCAF2B9CA20700B53E84 /* Assets.xcassets */; };
@@ -27,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4161E02D2B9CD921003A769A /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersDataRepository.swift; sourceTree = "<group>"; };
+		4161E0322B9CDA32003A769A /* ChargerRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerRealmModel.swift; sourceTree = "<group>"; };
+		4161E0352B9CDBD5003A769A /* ChargersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersCoordinator.swift; sourceTree = "<group>"; };
+		4161E0392B9CDC4A003A769A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4161E03B2B9CDD98003A769A /* ChargersDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersDataViewModel.swift; sourceTree = "<group>"; };
+		4161E03D2B9CDFCD003A769A /* ChargersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersListView.swift; sourceTree = "<group>"; };
 		4171DCA32B9CA20500B53E84 /* ChargeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4171DCA62B9CA20500B53E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4171DCA82B9CA20500B53E84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4161E02C2B9CD900003A769A /* Chargers */ = {
+			isa = PBXGroup;
+			children = (
+				4161E02D2B9CD921003A769A /* Charger.swift */,
+				4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */,
+			);
+			path = Chargers;
+			sourceTree = "<group>";
+		};
+		4161E0312B9CDA23003A769A /* Chargers */ = {
+			isa = PBXGroup;
+			children = (
+				4161E0322B9CDA32003A769A /* ChargerRealmModel.swift */,
+			);
+			path = Chargers;
+			sourceTree = "<group>";
+		};
+		4161E0342B9CDB8B003A769A /* Chargers */ = {
+			isa = PBXGroup;
+			children = (
+				4161E0352B9CDBD5003A769A /* ChargersCoordinator.swift */,
+				4161E03B2B9CDD98003A769A /* ChargersDataViewModel.swift */,
+				4161E03D2B9CDFCD003A769A /* ChargersListView.swift */,
+			);
+			path = Chargers;
+			sourceTree = "<group>";
+		};
+		4161E0382B9CDC35003A769A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4161E0392B9CDC4A003A769A /* Coordinator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4171DC9A2B9CA20500B53E84 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +129,7 @@
 			children = (
 				4171DCA62B9CA20500B53E84 /* AppDelegate.swift */,
 				4171DCA82B9CA20500B53E84 /* SceneDelegate.swift */,
+				4161E0382B9CDC35003A769A /* Helpers */,
 				4171DCC02B9CA49800B53E84 /* Data */,
 				4171DCBA2B9CA23D00B53E84 /* Modules */,
 				4171DCAF2B9CA20700B53E84 /* Assets.xcassets */,
@@ -93,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4171DCBB2B9CA24400B53E84 /* SitesMap */,
+				4161E0342B9CDB8B003A769A /* Chargers */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -124,6 +175,7 @@
 				4171DCC62B9CA55300B53E84 /* NetworkService.swift */,
 				4171DCC42B9CA51300B53E84 /* Repository.swift */,
 				4171DCC82B9CA63D00B53E84 /* Sites */,
+				4161E02C2B9CD900003A769A /* Chargers */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -140,6 +192,7 @@
 		4171DCD62B9CC65200B53E84 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				4161E0312B9CDA23003A769A /* Chargers */,
 				4171DCD92B9CC6B800B53E84 /* Sites */,
 				4171DCD72B9CC66100B53E84 /* RealmStorage.swift */,
 			);
@@ -231,14 +284,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4161E0332B9CDA32003A769A /* ChargerRealmModel.swift in Sources */,
+				4161E03C2B9CDD98003A769A /* ChargersDataViewModel.swift in Sources */,
 				4171DCD02B9CAEF100B53E84 /* SiteAnnotation.swift in Sources */,
+				4161E0302B9CD9FB003A769A /* ChargersDataRepository.swift in Sources */,
 				4171DCC32B9CA4CA00B53E84 /* APIEndpoints.swift in Sources */,
 				4171DCBF2B9CA2BA00B53E84 /* SitesMapViewController.swift in Sources */,
 				4171DCA72B9CA20500B53E84 /* AppDelegate.swift in Sources */,
+				4161E03E2B9CDFCD003A769A /* ChargersListView.swift in Sources */,
 				4171DCA92B9CA20500B53E84 /* SceneDelegate.swift in Sources */,
 				4171DCCC2B9CA6A400B53E84 /* Site.swift in Sources */,
+				4161E03A2B9CDC4A003A769A /* Coordinator.swift in Sources */,
 				4171DCBD2B9CA26E00B53E84 /* SitesMapCoordinator.swift in Sources */,
 				4171DCCE2B9CA8F900B53E84 /* SitesMapDataViewModel.swift in Sources */,
+				4161E02E2B9CD921003A769A /* Charger.swift in Sources */,
+				4161E0362B9CDBD5003A769A /* ChargersCoordinator.swift in Sources */,
 				4171DCC52B9CA51300B53E84 /* Repository.swift in Sources */,
 				4171DCCA2B9CA65100B53E84 /* SitesDataRepository.swift in Sources */,
 				4171DCDB2B9CC71B00B53E84 /* SiteRealmModel.swift in Sources */,

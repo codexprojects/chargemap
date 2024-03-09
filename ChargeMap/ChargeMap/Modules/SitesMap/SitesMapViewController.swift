@@ -22,6 +22,8 @@ class SitesMapViewController: UIViewController {
     var userCoordinate: CLLocationCoordinate2D?
     var locationManager: CLLocationManager?
     
+    weak var coordinator: SitesMapCoordinator?
+    
     init(viewModel: SitesMapDataViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -153,7 +155,8 @@ extension SitesMapViewController: MKMapViewDelegate {
         // Handle the tap on the callout accessory
         print("Tapped on the callout accessory")
         guard let annotation = view.annotation as? SiteAnnotation else { return }
-        print(annotation.site)
+        let chargersCoordinator = ChargersCoordinator(navigationController: navigationController!, site: annotation.site)
+        chargersCoordinator.start()
     }
 }
 

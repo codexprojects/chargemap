@@ -56,7 +56,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 extension SceneDelegate {
     private func startApplicationWithSiteMap(windowScene: UIWindowScene) {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        coordinator = SitesMapCoordinator()
+        let navigationController = UINavigationController()
+        coordinator = SitesMapCoordinator(navigationController: navigationController)
         coordinator?.start()
         window?.windowScene = windowScene
         window?.rootViewController = coordinator?.navigationController

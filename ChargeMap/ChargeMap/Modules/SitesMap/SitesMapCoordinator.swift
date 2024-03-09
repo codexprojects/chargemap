@@ -7,17 +7,19 @@
 
 import UIKit
 
-final class SitesMapCoordinator {
+final class SitesMapCoordinator: Coordinator {
+    var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
-    
-    init() {
-        navigationController = UINavigationController()
+
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
-    
+
     func start() {
         let repository = SitesDataRepository()
         let sitesMapDataViewModel = SitesMapDataViewModel(repository: repository)
         let sitesViewController = SitesMapViewController(viewModel: sitesMapDataViewModel)
+        sitesViewController.coordinator = self
         navigationController.pushViewController(sitesViewController, animated: true)
     }
-}
+} 
