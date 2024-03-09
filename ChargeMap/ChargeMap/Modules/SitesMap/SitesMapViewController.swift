@@ -7,11 +7,16 @@
 
 import UIKit
 import Combine
+import MapKit
 
 class SitesMapViewController: UIViewController {
     
     private let viewModel: SitesMapDataViewModel
     private var cancellables = Set<AnyCancellable>()
+    
+    // MARK: - Views
+    private var mapView: MKMapView!
+    private var annotations = [SiteAnnotation]()
     
     init(viewModel: SitesMapDataViewModel) {
         self.viewModel = viewModel
@@ -24,13 +29,15 @@ class SitesMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPurple
+        setupMapView()
+        setupLocateMeButton()
         Task {
             await viewModel.fetchSites()
         }
         bindViewModel()
     }
     
+    // MARK: Data Binding
     private func bindViewModel() {
         viewModel.$sites
             .sink { sites in
@@ -40,4 +47,40 @@ class SitesMapViewController: UIViewController {
             }
             .store(in: &cancellables)
     }
+   
+    // MARK: - MapView
+    private func setupMapView() {
+        mapView = MKMapView(frame: view.bounds)
+        mapView.delegate = self
+        mapView.showsUserLocation = true
+        view.addSubview(mapView)
+    }
+    
+    func setupLocateMeButton() {
+        let locateMeButton = UIButton(type: .system)
+        
+        var config = UIButton.Configuration.plain()
+        // Customize the SF Symbol size using UIImage.SymbolConfiguration
+        let symbolSize = UIImage.SymbolConfiguration(pointSize: 50, weight: .medium, scale: .default)
+        let symbolImage = UIImage(systemName: "location.circle.fill", withConfiguration: symbolSize)
+        config.image = symbolImage
+        locateMeButton.configuration = config
+        
+        locateMeButton.addTarget(self, action: #selector(locateMeButtonTapped), for: .touchUpInside)
+        locateMeButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(locateMeButton)
+        
+        NSLayoutConstraint.activate([
+            locateMeButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+            locateMeButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
+        ])
+    }
+    
+    @objc private func locateMeButtonTapped() {
+        print("Locate me!!!")
+    }
 }
+
+
+//MARK: - MKMapViewDelegate
+extension SitesMapViewController: MKMapViewDelegate {}
