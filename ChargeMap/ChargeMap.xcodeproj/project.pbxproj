@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4154A7D12B9CFF61005A59CE /* SitesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */; };
 		4154A7D32B9D01ED005A59CE /* ChargersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */; };
 		4161E02E2B9CD921003A769A /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02D2B9CD921003A769A /* Charger.swift */; };
 		4161E0302B9CD9FB003A769A /* ChargersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */; };
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		4154A7C72B9CFDFD005A59CE /* ChargeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesViewModelTests.swift; sourceTree = "<group>"; };
 		4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersViewModelTests.swift; sourceTree = "<group>"; };
 		4161E02D2B9CD921003A769A /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
 		4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersDataRepository.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		4154A7C82B9CFDFD005A59CE /* ChargeMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */,
 				4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */,
 			);
 			path = ChargeMapTests;
@@ -348,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4154A7D12B9CFF61005A59CE /* SitesViewModelTests.swift in Sources */,
 				4154A7D32B9D01ED005A59CE /* ChargersViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
