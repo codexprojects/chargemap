@@ -12,7 +12,8 @@ final class SitesDataRepository: Repository {
     private let networkService = NetworkService()
     private let url: URL?
 
-    init(url: URL?) {
+    init() {
+        let url = APIEndpoints.sites.url
         self.url = url
     }
     

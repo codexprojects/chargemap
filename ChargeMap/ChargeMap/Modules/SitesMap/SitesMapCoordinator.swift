@@ -15,8 +15,7 @@ final class SitesMapCoordinator {
     }
     
     func start() {
-        let url = APIEndpoints.sites.url
-        let repository = SitesDataRepository(url: url)
+        let repository = SitesDataRepository()
         let sitesMapDataViewModel = SitesMapDataViewModel(repository: repository)
         let sitesViewController = SitesMapViewController(viewModel: sitesMapDataViewModel)
         navigationController.pushViewController(sitesViewController, animated: true)

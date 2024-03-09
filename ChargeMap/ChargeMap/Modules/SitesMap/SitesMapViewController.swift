@@ -50,7 +50,7 @@ class SitesMapViewController: UIViewController {
             .sink { [weak self] sites in
                 guard let self else { return }
                 Task(priority: .userInitiated) { @MainActor in
-                    self.title = "\(sites.count)"
+                    self.title = " Total Points \(sites.count)"
                     self.addAnnotations(for: sites)
                     self.updateMapRegion(rangeSpan: 1000)
                 }
