@@ -40,9 +40,10 @@ class SitesMapViewController: UIViewController {
     // MARK: Data Binding
     private func bindViewModel() {
         viewModel.$sites
-            .sink { sites in
+            .sink { [weak self] sites in
                 Task { @MainActor in
-                    self.title = "\(sites.count)"
+                    self?.title = "\(sites.count)"
+                    self?.addAnnotations(for: sites)
                 }
             }
             .store(in: &cancellables)
@@ -78,6 +79,21 @@ class SitesMapViewController: UIViewController {
     
     @objc private func locateMeButtonTapped() {
         print("Locate me!!!")
+    }
+    
+    private func addAnnotations(for sites: [Site]) {
+        // Remove existing annotations
+        mapView.removeAnnotations(annotations)
+        annotations.removeAll()
+        
+        // Create new annotations for the sites
+        for site in sites {
+            let annotation = SiteAnnotation(site: site)
+            annotations.append(annotation)
+        }
+        
+        // Add the new annotations to the map view
+        mapView.addAnnotations(annotations)
     }
 }
 

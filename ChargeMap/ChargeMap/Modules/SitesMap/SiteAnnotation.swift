@@ -16,10 +16,10 @@ final class SiteAnnotation: NSObject, MKAnnotation {
     var site: Site
     var identifier = "SiteAnnotation"
     
-    init(coordinate: CLLocationCoordinate2D, title: String? = nil, subtitle: String? = nil, site: Site, identifier: String = "SiteAnnotation") {
-        self.coordinate = coordinate
-        self.title = title
-        self.subtitle = subtitle
+    init(site: Site) {
+        self.coordinate = CLLocationCoordinate2D(latitude: site.location.lat, longitude: site.location.lon)
+        self.title = site.name
+        self.subtitle = site.details
         self.site = site
     }
 }
