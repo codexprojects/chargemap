@@ -9,5 +9,5 @@ import Foundation
 
 protocol Repository {
     associatedtype T
-    func fetchSites(completion: @escaping (Result<[T], Error>) -> Void)
+    func fetch() async throws -> [T]
 }
