@@ -18,6 +18,7 @@
 		4171DCC72B9CA55300B53E84 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCC62B9CA55300B53E84 /* NetworkService.swift */; };
 		4171DCCA2B9CA65100B53E84 /* SitesDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCC92B9CA65100B53E84 /* SitesDataRepository.swift */; };
 		4171DCCC2B9CA6A400B53E84 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCCB2B9CA6A400B53E84 /* Site.swift */; };
+		4171DCCE2B9CA8F900B53E84 /* SitesMapDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCCD2B9CA8F900B53E84 /* SitesMapDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4171DCC62B9CA55300B53E84 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4171DCC92B9CA65100B53E84 /* SitesDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesDataRepository.swift; sourceTree = "<group>"; };
 		4171DCCB2B9CA6A400B53E84 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		4171DCCD2B9CA8F900B53E84 /* SitesMapDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesMapDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4171DCBC2B9CA26E00B53E84 /* SitesMapCoordinator.swift */,
+				4171DCCD2B9CA8F900B53E84 /* SitesMapDataViewModel.swift */,
 				4171DCBE2B9CA2BA00B53E84 /* SitesMapViewController.swift */,
 			);
 			path = SitesMap;
@@ -198,6 +201,7 @@
 				4171DCA92B9CA20500B53E84 /* SceneDelegate.swift in Sources */,
 				4171DCCC2B9CA6A400B53E84 /* Site.swift in Sources */,
 				4171DCBD2B9CA26E00B53E84 /* SitesMapCoordinator.swift in Sources */,
+				4171DCCE2B9CA8F900B53E84 /* SitesMapDataViewModel.swift in Sources */,
 				4171DCC52B9CA51300B53E84 /* Repository.swift in Sources */,
 				4171DCCA2B9CA65100B53E84 /* SitesDataRepository.swift in Sources */,
 				4171DCC72B9CA55300B53E84 /* NetworkService.swift in Sources */,

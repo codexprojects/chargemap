@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Location: Decodable {
+struct Location: Codable {
     let lat: Double
     let lon: Double
 }
 
-struct Site: Decodable {
+struct Site: Codable {
     let id: String
     let name: String
     let location: Location
