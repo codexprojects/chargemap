@@ -57,7 +57,7 @@ class SitesMapViewController: UIViewController {
             }
             .store(in: &cancellables)
     }
-   
+    
     // MARK: - MapView
     private func setupMapView() {
         mapView = MKMapView(frame: view.bounds)
@@ -87,7 +87,10 @@ class SitesMapViewController: UIViewController {
     }
     
     @objc private func locateMeButtonTapped() {
-        print("Locate me!!!")
+        if let coordinate = locationManager?.location?.coordinate {
+            self.userCoordinate = coordinate
+            updateMapRegion(rangeSpan: 1000)
+        }
     }
     
     private func addAnnotations(for sites: [Site]) {
@@ -119,6 +122,38 @@ extension SitesMapViewController: MKMapViewDelegate {
         guard let userCoordinate else { return }
         let region = MKCoordinateRegion(center: userCoordinate, latitudinalMeters: rangeSpan, longitudinalMeters: rangeSpan)
         mapView.region = region
+    }
+    
+    //MARK: Annotation delegates
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var annotationView = MKAnnotationView()
+        guard let annotation = annotation as? SiteAnnotation else {
+            return nil
+        }
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: annotation.identifier) {
+            annotationView = dequeuedView
+        } else {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotation.identifier)
+        }
+        
+        annotationView.image = UIImage(named: "chargingStation")
+        annotationView.canShowCallout = true
+        let paragraph = UILabel()
+        paragraph.numberOfLines = 0
+        paragraph.font = .preferredFont(forTextStyle: .caption1)
+        paragraph.text = annotation.subtitle
+        annotationView.detailCalloutAccessoryView = paragraph
+        annotationView.leftCalloutAccessoryView = UIImageView(image: annotationView.image)
+        annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        // Handle the tap on the callout accessory
+        print("Tapped on the callout accessory")
+        guard let annotation = view.annotation as? SiteAnnotation else { return }
+        print(annotation.site)
     }
 }
 
