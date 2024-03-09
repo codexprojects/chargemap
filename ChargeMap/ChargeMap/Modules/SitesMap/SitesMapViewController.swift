@@ -18,6 +18,8 @@ class SitesMapViewController: UIViewController {
     private var mapView: MKMapView!
     private var annotations = [SiteAnnotation]()
     
+    var userCoordinate = CLLocationCoordinate2D(latitude: 56.9496, longitude: 24.1052)
+    
     init(viewModel: SitesMapDataViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -41,9 +43,11 @@ class SitesMapViewController: UIViewController {
     private func bindViewModel() {
         viewModel.$sites
             .sink { [weak self] sites in
-                Task { @MainActor in
-                    self?.title = "\(sites.count)"
-                    self?.addAnnotations(for: sites)
+                guard let self else { return }
+                Task(priority: .userInitiated) { @MainActor in
+                    self.title = "\(sites.count)"
+                    self.addAnnotations(for: sites)
+                    self.updateMapRegion(rangeSpan: 1000)
                 }
             }
             .store(in: &cancellables)
@@ -99,4 +103,9 @@ class SitesMapViewController: UIViewController {
 
 
 //MARK: - MKMapViewDelegate
-extension SitesMapViewController: MKMapViewDelegate {}
+extension SitesMapViewController: MKMapViewDelegate {
+    func updateMapRegion(rangeSpan: CLLocationDistance) {
+        let region = MKCoordinateRegion(center: userCoordinate, latitudinalMeters: rangeSpan, longitudinalMeters: rangeSpan)
+        mapView.region = region
+    }
+}
