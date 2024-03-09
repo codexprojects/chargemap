@@ -23,6 +23,7 @@
 		4171DCD32B9CC61200B53E84 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4171DCD22B9CC61200B53E84 /* Realm */; };
 		4171DCD52B9CC61200B53E84 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4171DCD42B9CC61200B53E84 /* RealmSwift */; };
 		4171DCD82B9CC66100B53E84 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCD72B9CC66100B53E84 /* RealmStorage.swift */; };
+		4171DCDB2B9CC71B00B53E84 /* SiteRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCDA2B9CC71B00B53E84 /* SiteRealmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4171DCCD2B9CA8F900B53E84 /* SitesMapDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesMapDataViewModel.swift; sourceTree = "<group>"; };
 		4171DCCF2B9CAEF100B53E84 /* SiteAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteAnnotation.swift; sourceTree = "<group>"; };
 		4171DCD72B9CC66100B53E84 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		4171DCDA2B9CC71B00B53E84 /* SiteRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRealmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +140,18 @@
 		4171DCD62B9CC65200B53E84 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				4171DCD92B9CC6B800B53E84 /* Sites */,
 				4171DCD72B9CC66100B53E84 /* RealmStorage.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		4171DCD92B9CC6B800B53E84 /* Sites */ = {
+			isa = PBXGroup;
+			children = (
+				4171DCDA2B9CC71B00B53E84 /* SiteRealmModel.swift */,
+			);
+			path = Sites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 				4171DCCE2B9CA8F900B53E84 /* SitesMapDataViewModel.swift in Sources */,
 				4171DCC52B9CA51300B53E84 /* Repository.swift in Sources */,
 				4171DCCA2B9CA65100B53E84 /* SitesDataRepository.swift in Sources */,
+				4171DCDB2B9CC71B00B53E84 /* SiteRealmModel.swift in Sources */,
 				4171DCC72B9CA55300B53E84 /* NetworkService.swift in Sources */,
 				4171DCD82B9CC66100B53E84 /* RealmStorage.swift in Sources */,
 			);
