@@ -1,6 +1,6 @@
-# ChargerMap
+# ChargeMap
 
-ChargerMap is an iOS application that showcases electric vehicle (EV) charging sites on a map. Utilizing data fetched from simulated API endpoints, it allows users to explore charging sites and view detailed information about the chargers and their statuses.
+ChargeMap is an iOS application that showcases electric vehicle (EV) charging sites on a map. Utilizing data fetched from simulated API endpoints allows users to explore charging sites and view detailed information about the chargers and their statuses.
 
 ## Features
 
@@ -19,7 +19,7 @@ ChargerMap is an iOS application that showcases electric vehicle (EV) charging s
 
 1. Clone the repository:
    
-2. Open `ChargerMap.xcodeproj` in Xcode.
+2. Open `ChargeMap.xcodeproj` in Xcode.
 
 3. Install third-party frameworks using Swift Package Manager (SPM):
    - Navigate to `File` > `Add Packages...`
@@ -36,11 +36,30 @@ Upon launching the app, users are presented with a map displaying annotations fo
 
 ## Architecture and Design Patterns
 
-ChargerMap employs the MVVM (Model-View-ViewModel) architecture, complemented by the Coordinator pattern for navigation management, ensuring a clean separation of concerns and enhancing maintainability.
+## Application Workflow Diagram
+
+![Screenshot 2024-03-09 at 22 21 59](https://github.com/codexprojects/chargemap/assets/3816522/5ce33572-6140-462e-96d0-5b863e34777f)
+
+## Key Components
+
+- **Network Service**: Responsible for performing network requests to fetch JSON data for sites and chargers.
+- **Data Repository**: Acts as an intermediary between the network service and the storage solution. It decides whether to fetch data from the network or use local data based on availability.
+- **Realm Storage**: Handles data persistence, allowing offline access to previously fetched data.
+- **ViewModel**: Manages the logic for fetching data through the repository and prepares it for presentation.
+- **View / SwiftUI**: Displays the data in a user-friendly format, utilizing SwiftUI for rendering UI components.
+
+## Workflow Description
+
+1. **Fetching Data**: The process begins with the ViewModel requesting data, first checking the Data Repository for locally available data.
+2. **Network Request**: If local data is unavailable or needs updating, the Data Repository instructs the Network Service to fetch fresh data.
+3. **Data Persistence**: The Realm Storage then persisted fetched data locally, ensuring that it was available for offline usage.
+4. **Data Presentation**: Finally, the ViewModel updates the View with the data, either freshly fetched or retrieved from local storage, to be displayed to the user.
+
+ChargerMap employs the MVVM (Model-View-ViewModel) architecture, complemented by the Coordinator pattern for navigation management. This ensures a clean separation of concerns and enhances maintainability.
 
 - **MVVM**: This pattern facilitates a clear separation between the application's logic (ViewModel), its presentation layer (View), and the data model (Model). ViewModels communicate changes to the Views using data binding (facilitated by SwiftUI and Combine), minimizing the View's logic.
 
-- **Coordinator**: The Coordinator pattern manages the navigation flow within the app, decoupling view controllers from their navigation logic. This approach simplifies transitions and contexts switching, making the app's navigation more flexible and easier to understand.
+- **Coordinator**: The Coordinator pattern manages the app's navigation flow, decoupling view controllers from their navigation logic. This approach simplifies transitions and context switching, making the app's navigation more flexible and easier to understand.
 
 - **Repository Pattern**: For data handling, ChargerMap utilizes the Repository pattern to abstract the data layer. This pattern provides a clean API for data access to the rest of the application, allowing for simpler data fetching and persistence management, and making the switch between local and remote data sources seamless.
 
