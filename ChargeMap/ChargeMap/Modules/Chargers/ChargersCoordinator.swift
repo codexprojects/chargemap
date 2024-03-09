@@ -22,7 +22,7 @@ final class ChargersCoordinator: NSObject, Coordinator, UIViewControllerTransiti
     }
     
     func showChargersList(siteID: String) {
-        let viewModel = ChargersMapDataViewModel(repository: ChargersDataRepository())
+        let viewModel = ChargersMapDataViewModel(repository: ChargersDataRepository(), siteID: self.site.id)
         let chargersListView = ChargersListView(viewModel: viewModel, siteID: siteID)
         let hostingController = UIHostingController(rootView: chargersListView)
 

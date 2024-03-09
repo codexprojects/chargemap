@@ -14,6 +14,14 @@ struct Charger: Codable, Identifiable {
     let evses: [EVSE]
     let connectors: [Connector]
     
+    init(id: String, siteID: String, name: String, evses: [EVSE], connectors: [Connector]) {
+        self.id = id
+        self.siteID = siteID
+        self.name = name
+        self.evses = evses
+        self.connectors = connectors
+    }
+
     init(from chargerRealmModel: ChargerRealmModel) {
         id = chargerRealmModel.id
         siteID = chargerRealmModel.siteID

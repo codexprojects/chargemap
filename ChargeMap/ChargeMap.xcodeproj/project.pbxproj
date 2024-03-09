@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4154A7D12B9CFF61005A59CE /* SitesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */; };
+		4154A7D32B9D01ED005A59CE /* ChargersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */; };
 		4161E02E2B9CD921003A769A /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02D2B9CD921003A769A /* Charger.swift */; };
 		4161E0302B9CD9FB003A769A /* ChargersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */; };
 		4161E0332B9CDA32003A769A /* ChargerRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161E0322B9CDA32003A769A /* ChargerRealmModel.swift */; };
@@ -33,7 +35,20 @@
 		4171DCDB2B9CC71B00B53E84 /* SiteRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171DCDA2B9CC71B00B53E84 /* SiteRealmModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4154A7CB2B9CFDFD005A59CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4171DC9B2B9CA20500B53E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4171DCA22B9CA20500B53E84;
+			remoteInfo = ChargeMap;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4154A7C72B9CFDFD005A59CE /* ChargeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesViewModelTests.swift; sourceTree = "<group>"; };
+		4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersViewModelTests.swift; sourceTree = "<group>"; };
 		4161E02D2B9CD921003A769A /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
 		4161E02F2B9CD9FB003A769A /* ChargersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersDataRepository.swift; sourceTree = "<group>"; };
 		4161E0322B9CDA32003A769A /* ChargerRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerRealmModel.swift; sourceTree = "<group>"; };
@@ -61,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4154A7C42B9CFDFD005A59CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4171DCA02B9CA20500B53E84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4154A7C82B9CFDFD005A59CE /* ChargeMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				4154A7D02B9CFF61005A59CE /* SitesViewModelTests.swift */,
+				4154A7D22B9D01ED005A59CE /* ChargersViewModelTests.swift */,
+			);
+			path = ChargeMapTests;
+			sourceTree = "<group>";
+		};
 		4161E02C2B9CD900003A769A /* Chargers */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4171DCA52B9CA20500B53E84 /* ChargeMap */,
+				4154A7C82B9CFDFD005A59CE /* ChargeMapTests */,
 				4171DCA42B9CA20500B53E84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4171DCA32B9CA20500B53E84 /* ChargeMap.app */,
+				4154A7C72B9CFDFD005A59CE /* ChargeMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +243,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4154A7C62B9CFDFD005A59CE /* ChargeMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4154A7CF2B9CFDFD005A59CE /* Build configuration list for PBXNativeTarget "ChargeMapTests" */;
+			buildPhases = (
+				4154A7C32B9CFDFD005A59CE /* Sources */,
+				4154A7C42B9CFDFD005A59CE /* Frameworks */,
+				4154A7C52B9CFDFD005A59CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4154A7CC2B9CFDFD005A59CE /* PBXTargetDependency */,
+			);
+			name = ChargeMapTests;
+			productName = ChargeMapTests;
+			productReference = 4154A7C72B9CFDFD005A59CE /* ChargeMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4171DCA22B9CA20500B53E84 /* ChargeMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4171DCB72B9CA20700B53E84 /* Build configuration list for PBXNativeTarget "ChargeMap" */;
@@ -241,6 +292,11 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					4154A7C62B9CFDFD005A59CE = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+						TestTargetID = 4171DCA22B9CA20500B53E84;
+					};
 					4171DCA22B9CA20500B53E84 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -263,11 +319,19 @@
 			projectRoot = "";
 			targets = (
 				4171DCA22B9CA20500B53E84 /* ChargeMap */,
+				4154A7C62B9CFDFD005A59CE /* ChargeMapTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4154A7C52B9CFDFD005A59CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4171DCA12B9CA20500B53E84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +344,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4154A7C32B9CFDFD005A59CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4154A7D12B9CFF61005A59CE /* SitesViewModelTests.swift in Sources */,
+				4154A7D32B9D01ED005A59CE /* ChargersViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4171DC9F2B9CA20500B53E84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +382,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4154A7CC2B9CFDFD005A59CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4171DCA22B9CA20500B53E84 /* ChargeMap */;
+			targetProxy = 4154A7CB2B9CFDFD005A59CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4171DCB12B9CA20700B53E84 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -321,6 +402,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4154A7CD2B9CFDFD005A59CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F39X3K6766;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilke.ChargeMap.ChargeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChargeMap";
+			};
+			name = Debug;
+		};
+		4154A7CE2B9CFDFD005A59CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F39X3K6766;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilke.ChargeMap.ChargeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChargeMap";
+			};
+			name = Release;
+		};
 		4171DCB52B9CA20700B53E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -430,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -501,6 +623,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4154A7CF2B9CFDFD005A59CE /* Build configuration list for PBXNativeTarget "ChargeMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4154A7CD2B9CFDFD005A59CE /* Debug */,
+				4154A7CE2B9CFDFD005A59CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4171DC9E2B9CA20500B53E84 /* Build configuration list for PBXProject "ChargeMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -13,16 +13,18 @@ struct FetchError: Identifiable {
     let message: String
 }
 
-class ChargersMapDataViewModel: ObservableObject {
+final class ChargersMapDataViewModel: ObservableObject {
     @Published var chargers: [Charger] = []
     @Published var fetchError: FetchError?
     
     private var cancellables = Set<AnyCancellable>()
-    
     private let repository: ChargersDataRepository
     
-    init(repository: ChargersDataRepository) {
+    let siteID: String
+    
+    init(repository: ChargersDataRepository, siteID: String) {
         self.repository = repository
+        self.siteID = siteID
     }
     
     func fetchChargers() async {
