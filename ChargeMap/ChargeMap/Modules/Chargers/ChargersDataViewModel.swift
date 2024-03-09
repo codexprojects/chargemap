@@ -8,16 +8,23 @@
 import Combine
 import Foundation
 
+struct FetchError: Identifiable {
+    let id = UUID()
+    let message: String
+}
+
 class ChargersMapDataViewModel: ObservableObject {
     @Published var chargers: [Charger] = []
+    @Published var fetchError: FetchError?
+    
     private var cancellables = Set<AnyCancellable>()
-
+    
     private let repository: ChargersDataRepository
-
+    
     init(repository: ChargersDataRepository) {
         self.repository = repository
     }
-
+    
     func fetchChargers() async {
         do {
             let chargers = try await repository.fetch()
@@ -25,8 +32,9 @@ class ChargersMapDataViewModel: ObservableObject {
                 self.chargers = chargers
             }
         } catch {
-            // Handle errors
-            print("Error fetching chargers: \(error)")
+            DispatchQueue.main.async {
+                self.fetchError = FetchError(message: error.localizedDescription)
+            }
         }
     }
 }

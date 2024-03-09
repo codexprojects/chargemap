@@ -34,6 +34,9 @@ struct ChargersListView: View {
             .task {
                 await viewModel.fetchChargers()
             }
+            .alert(item: $viewModel.fetchError) { fetchError in
+                Alert(title: Text("Error"), message: Text(fetchError.message), dismissButton: .default(Text("OK")))
+            }
         }
     }
 }
