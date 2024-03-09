@@ -8,6 +8,7 @@
 import UIKit
 import Combine
 import MapKit
+import CoreLocation
 
 class SitesMapViewController: UIViewController {
     
@@ -18,7 +19,8 @@ class SitesMapViewController: UIViewController {
     private var mapView: MKMapView!
     private var annotations = [SiteAnnotation]()
     
-    var userCoordinate = CLLocationCoordinate2D(latitude: 56.9496, longitude: 24.1052)
+    var userCoordinate: CLLocationCoordinate2D?
+    var locationManager: CLLocationManager?
     
     init(viewModel: SitesMapDataViewModel) {
         self.viewModel = viewModel
@@ -31,12 +33,15 @@ class SitesMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupMapView()
         setupLocateMeButton()
+        setupLocationManager()
+        bindViewModel()
+        
         Task {
             await viewModel.fetchSites()
         }
-        bindViewModel()
     }
     
     // MARK: Data Binding
@@ -99,13 +104,43 @@ class SitesMapViewController: UIViewController {
         // Add the new annotations to the map view
         mapView.addAnnotations(annotations)
     }
+    
+    private func setupLocationManager() {
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestWhenInUseAuthorization()
+    }
 }
 
 
 //MARK: - MKMapViewDelegate
 extension SitesMapViewController: MKMapViewDelegate {
     func updateMapRegion(rangeSpan: CLLocationDistance) {
+        guard let userCoordinate else { return }
         let region = MKCoordinateRegion(center: userCoordinate, latitudinalMeters: rangeSpan, longitudinalMeters: rangeSpan)
         mapView.region = region
+    }
+}
+
+//MARK: - CLLocationManagerDelegate
+extension SitesMapViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse, .authorizedAlways:
+            print("Location access granted")
+            userCoordinate = manager.location?.coordinate
+            updateMapRegion(rangeSpan: 1000)
+        case .denied, .restricted:
+            print("Location access denied")
+        case .notDetermined:
+            locationManager?.requestWhenInUseAuthorization()
+        default:
+            break
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        userCoordinate = location.coordinate
     }
 }
