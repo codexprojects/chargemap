@@ -41,20 +41,33 @@ final class SitesDataRepository: Repository {
         }
         
         let sites: [Site] = try await networkService.fetch(from: url)
-        await saveSitesToLocalDatabase(sites)
+        do {
+            try await saveSitesToLocalDatabase(sites)
+        }
         return try await fetchSitesFromLocalDatabase() // Fetch updated data from the local DB
     }
     
     // Save fetched sites to the local database
-    private func saveSitesToLocalDatabase(_ sites: [Site]) async {
-        let realmSites = sites.map(SiteRealmModel.init)
-        RealmStorage.shared.save(objects: realmSites)
+    private func saveSitesToLocalDatabase(_ sites: [Site]) async throws {
+        try await MainActor.run {
+            do {
+                let realmSites = sites.map(SiteRealmModel.init)
+                try RealmStorage.shared.save(objects: realmSites)
+            } catch {
+                throw LocalDatabaseError.failedToSave
+            }
+        }
     }
     
     // Fetch sites from the local database
     private func fetchSitesFromLocalDatabase() async throws -> [Site] {
-        let siteRealms: Results<SiteRealmModel> = RealmStorage.shared.fetch(type: SiteRealmModel.self)
-        let sites = siteRealms.map(Site.init)
-        return Array(sites)
+        do {
+            let siteRealms: Results<SiteRealmModel> = try RealmStorage.shared.fetch(type: SiteRealmModel.self)
+            let sites = siteRealms.map(Site.init)
+            return Array(sites)
+        } catch {
+            throw LocalDatabaseError.failedToFetch
+        }
+        
     }
 }

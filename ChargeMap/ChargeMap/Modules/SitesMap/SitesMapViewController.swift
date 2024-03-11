@@ -89,10 +89,12 @@ class SitesMapViewController: UIViewController {
     }
     
     @objc private func locateMeButtonTapped() {
-        if let coordinate = locationManager?.location?.coordinate {
-            self.userCoordinate = coordinate
-            updateMapRegion(rangeSpan: 1000)
+        guard let coordinate = locationManager?.location?.coordinate else {
+           showAlert(title: "Location Services Disabled", message: "Please enable location services for this app in Settings.")
+            return
         }
+        self.userCoordinate = coordinate
+        updateMapRegion(rangeSpan: 1000)
     }
     
     private func addAnnotations(for sites: [Site]) {
@@ -170,6 +172,7 @@ extension SitesMapViewController: CLLocationManagerDelegate {
             updateMapRegion(rangeSpan: 1000)
         case .denied, .restricted:
             print("Location access denied")
+            showAlert(title: "Location Services Disabled", message: "Please enable location services for this app in Settings.")
         case .notDetermined:
             locationManager?.requestWhenInUseAuthorization()
         default:
@@ -180,5 +183,19 @@ extension SitesMapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
         userCoordinate = location.coordinate
+    }
+}
+
+extension SitesMapViewController {
+    private func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let settingsAction = UIAlertAction(title: "Settings", style: .default) { _ in
+            guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
+            UIApplication.shared.open(settingsURL)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alertController.addAction(settingsAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
     }
 }

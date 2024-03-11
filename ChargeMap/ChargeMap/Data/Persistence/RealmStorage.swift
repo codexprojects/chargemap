@@ -7,21 +7,23 @@
 
 import RealmSwift
 
+enum LocalDatabaseError: Error {
+    case failedToSave
+    case failedToFetch
+}
+
 final class RealmStorage {
     static let shared = RealmStorage()
     
-    private let realm: Realm
+    private init() {}
     
-    private init() {
-        do {
-            realm = try Realm()
-        } catch {
-            fatalError("Failed to initialize Realm: \(error)")
-        }
+    private func getRealm() throws -> Realm {
+        return try Realm()
     }
     
     func save<T: Object>(object: T) {
         do {
+            let realm = try getRealm()
             try realm.write {
                 realm.add(object, update: .all)
             }
@@ -30,27 +32,16 @@ final class RealmStorage {
         }
     }
     
-    func save<T: Object>(objects: [T]) {
-        do {
-            try realm.write {
-                realm.add(objects, update: .all)
-            }
-        } catch {
-            print("Failed to save objects: \(error)")
+    func save<T: Object>(objects: [T]) throws {
+        let realm = try getRealm()
+        try realm.write {
+            realm.add(objects, update: .all)
         }
     }
     
-    func fetch<T: Object>(type: T.Type) -> Results<T> {
-        realm.objects(type)
+    func fetch<T: Object>(type: T.Type) throws -> Results<T> {
+        let realm = try getRealm()
+        return realm.objects(type)
     }
     
-    func delete<T: Object>(object: T) {
-        do {
-            try realm.write {
-                realm.delete(object)
-            }
-        } catch {
-            print("Failed to delete object: \(error)")
-        }
-    }
 }
